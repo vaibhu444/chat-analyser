@@ -4,6 +4,12 @@ from nltk.corpus import stopwords
 from collections import Counter
 import pandas as pd
 import emoji
+import nltk
+
+
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
 
 def fetch_stats(selected_user, df):
     urlExtract = URLExtract()
